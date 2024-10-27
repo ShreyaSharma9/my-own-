@@ -1,10 +1,10 @@
 {
-  "description": "Chromium is a free and open-source browser, primarily developed and maintained by Google.",
+  "description": "Chrome is a free and open-source browser developed by Google, designed for speed and simplicity.",
   "docker_registry": "https://index.docker.io/v1/",
-  "image_src": "chromium.png",
-  "name": "kasmweb/chromium:develop",
+  "image_src": "chrome.png",  // Path to the icon image for your workspace
+  "name": "shreya449944/chrome:latest",  // Your Docker Hub image name
   "run_config": {
-    "hostname": "kasm"
+    "hostname": "kasm"  // Set the hostname for the container
   },
   "exec_config": {
     "go": {
@@ -15,16 +15,17 @@
     }
   },
   "categories": [
-    "Browser"
+    "Browser"  // Category for your workspace
   ],
-  "friendly_name": "Chromium",
+  "friendly_name": "Chrome",  // Display name for your workspace
   "architecture": [
     "amd64",
-    "arm64"
+    "arm64"  // Supported architectures
   ],
   "compatibility": [
-    "1.13.x",
-    "1.14.x"
+    "1.1.x",  // Specify compatible Kasm Workspace versions
+    "1.2.x"
   ],
-  "uncompressed_size_mb": 2170
+  "uncompressed_size_mb": 2500  // Size of the image in MB
 }
+
